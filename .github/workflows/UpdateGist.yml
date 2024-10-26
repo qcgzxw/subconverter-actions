@@ -1,6 +1,7 @@
 name: Subconverter TO gist
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main  # 每次push到main分支时触发
