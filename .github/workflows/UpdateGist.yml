@@ -5,11 +5,6 @@ on:
   push:
     branches:
       - main  # 每次push到main分支时触发
-  schedule:
-    - cron: '0 0 */3 * *'  # 每3天的午夜（UTC时间）触发
-  issues:
-    types: [opened, edited, deleted, pinned, unpinned, labeled, unlabeled, closed, reopened, assigned, unassigned]  # issues事件触发
-
 jobs:
   run-subconverter:
     runs-on: ubuntu-latest  # 指定运行环境
